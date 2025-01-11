@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    padding-top: 200px;
+}
+.container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    background-color: #f5e237;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+    box-shadow: 0 5px 10px #0a6a0a7c;
+}
+.card + .card{
+    margin-left: -10%;
+}
+.card:hover{
+    transform: rotate(-6deg);
+}
+.card:hover ~ .card{
+    z-index: 1;
+    translate: 60px;
+}
